@@ -39,7 +39,7 @@ function IsApiInitialized() {
     return _initialized;
 }
 
-DxChart2 = {
+GCWrapper = {
     Init: function (debug) {
         this.isInitialized = false;
         this.debug = debug || false;
@@ -68,7 +68,7 @@ DxChart2 = {
             "#9edae5"
         ];
 
-        this.dxChartCollection = [];
+        this.chartCollection = [];
     },
 
     DrawBarChart: function (barData, barChartOptions, placeHolderId) {
@@ -356,8 +356,3 @@ function log(message) {
         console.log(message);
     }
 }
-
-//function shuffle(o){ //v1.0
-//    for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-//    return o;
-//}
